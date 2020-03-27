@@ -21,7 +21,7 @@ for p in vim.eval("&runtimepath").split(','):
 			sys.path.append(dname)
 			break
 
-from wiki import diary, test
+from wiki import diary
 EOF
 "{ Functions
 "{{ BuildMyDiary

@@ -15,7 +15,7 @@ python3 << EOF
 import vim, os, sys
 
 for p in vim.eval("&runtimepath").split(','):
-	dname = os.path.join(p, "ftplugin")
+	dname = os.path.join(p, "plugin")
 	if os.path.exists(os.path.join(dname, "wiki")):
 		if dname not in sys.path:
 			sys.path.append(dname)
@@ -25,11 +25,11 @@ from wiki import diary
 EOF
 "{ Functions
 "{{ BuildMyDiary
-function! BuildMyDiary()
+function! s:BuildMyDiary() abort
   python3 diary.build_index()
 endfunction
 "{{ imgsave
-function! Imgsave()
+function! s:Imgsave() abort
   let filename=expand("%:t")
   let img_name="images/" . localtime() . filename
   cd ~/repos/step
@@ -38,24 +38,27 @@ function! Imgsave()
   History
 endfunction
 "{{ Open Step
-function! OpenStep()
+function! s:OpenStep() abort
   cd ~/repos/notes/
   e step/step.md
 endfunction
 
 "{{ Open Index
-function! OpenIndex()
+function! s:OpenIndex() abort
   cd ~/repos/notes
   e index.md
 endfunction
 "{{ Open Today's Journal
-function! OpenToday()
+function! s:OpenToday() abort
   cd ~/repos/notes
   exe "e diary/" . strftime("%Y-%m-%d") . ".md"
 endfunction
 "{ Commands
-command! BuildDiary call BuildMyDiary()
+command! BuildDiary call s:BuildMyDiary()
+command! OpenIndex call s:OpenIndex()
+command! OpenStep call s:OpenStep()
+command! OpenToday call s:OpenToday()
 "{ Mappings
-nmap <Leader>ww :call OpenIndex()<CR>
-nmap <Leader>ws :call OpenStep()<CR>
-nmap <Leader>wt :call OpenStep()<CR>
+nmap <Leader>ww :OpenIndex<CR>
+nmap <Leader>ws :OpenStep<CR>
+nmap <Leader>wt :OpenToday<CR>

@@ -53,10 +53,8 @@ function! OpenToday()
   cd ~/repos/notes
   exe "e diary/" . strftime("%Y-%m-%d") . ".md"
 endfunction
-
 "{ Commands
 command! BuildDiary call BuildMyDiary()
-
 "{ Mappings
 nmap <Leader>ww :call OpenIndex()<CR>
 nmap <Leader>ws :call OpenStep()<CR>

@@ -5,17 +5,19 @@ on:
 
 jobs:
   run-tests:
-    runs-on: ubuntu
-  - name: Install Vader
-    run: |
-      git clone https://github.com/junegunn/vader.vim.git
-  - name: Run Tests
-    run: |
-      vim -Nu <(cat << VIMRC
-      filetype off
-      set rtp+=vader.vim
-      set rtp+=.
-      set rtp+=after
-      filetype plugin indent on
-      syntax enable
-      VIMRC) -c 'Vader! test/*' > /dev/null
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1  
+    - name: Install Vader
+      run: |
+        git clone https://github.com/junegunn/vader.vim.git
+    - name: Run Tests
+      run: |
+        vim -Nu <(cat << VIMRC
+        filetype off
+        set rtp+=vader.vim
+        set rtp+=.
+        set rtp+=after
+        filetype plugin indent on
+        syntax enable
+        VIMRC) -c 'Vader! test/*' > /dev/null

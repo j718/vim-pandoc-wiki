@@ -1,3 +1,5 @@
+Execute (Set wiki index):
+  let g:pandoc#wiki#dirs = ['~']
 Execute (Test Open wiki file):
   call pandoc#wiki#OpenWikiFile('index.md')
   AssertEqual 'index.md', expand('%:t')

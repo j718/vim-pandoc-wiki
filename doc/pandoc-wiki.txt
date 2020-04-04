@@ -21,10 +21,6 @@ INTRODUCTION					*pandoc-wiki-introduction*
 ==============================================================================
 INSTALL							*pandoc-wiki-install*
 
-Note: pandoc-wiki requires Neovim (0.3.0+) or Vim8 (latest is recommended) with
-Python 3.6.1+ and |+timers| enabled.
-
-
 If ":echo has('python3')" returns `1`, then you're done; otherwise, see below.
 
 You can enable Python3 interface with pip: >
@@ -52,7 +48,7 @@ VARIABLES	 					*pandoc-wiki-variables*
   A list containing wiki dirs. Currently, only one wiki dir is supported.
 
 *g:pandoc#wiki#favorite_sub*
-  A favorite sub that can be reached by calling pando
+  A favorite sub that can be reached by calling |pandoc#wiki#OpenFavoriteSub()|
 TODO add variables
 ------------------------------------------------------------------------------
 FUNCTIONS 						*pandoc-wiki-functions*
@@ -78,13 +74,13 @@ gm (g mark)
   Make current paragraph a block quote
 
 *<leader>ww*
-  call pandoc#wiki#OpenIndex()
+  call |pandoc#wiki#OpenIndex|
 
 *<leader>ws*
-  call pandoc#wiki#OpenFavoriteSub()
+  call |pandoc#wiki#OpenFavoriteSub|
 
 *<leader>wt*
-  call pandoc#wiki#OpenToday()
+  call |pandoc#wiki#OpenToday|
 
 ==============================================================================
 FREQUENTLY ASKED QUESTIONS (FAQ)			*pandoc-wiki-faq*

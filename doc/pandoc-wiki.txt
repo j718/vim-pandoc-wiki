@@ -1,4 +1,4 @@
-*pandoc-wiki.txt* Some functions for vim-pandoc that I ported from vim-wiki	
+*pandoc-wiki* Some functions for vim-pandoc that I ported from vim-wiki	
 
 Version: 0.0.1
 Author: Jacob Clarke <jacobclarke718 at gmail.com>
@@ -6,7 +6,7 @@ License: MIT license
 
 CONTENTS						*pandoc-wiki-contents*
 
-Introduction		||pandoc-wiki-introduction|
+Introduction		|pandoc-wiki-introduction|
 Install			|pandoc-wiki-install|
 Options		  |pandoc-wiki-options|
 Variables		  |pandoc-wiki-variables|
@@ -48,27 +48,27 @@ TODO add options
 ------------------------------------------------------------------------------
 VARIABLES	 					*pandoc-wiki-variables*
 
-g:pandoc#wiki#dirs
+*g:pandoc#wiki#dirs*
   A list containing wiki dirs. Currently, only one wiki dir is supported.
 
-g:pandoc#wiki#favorite_sub
+*g:pandoc#wiki#favorite_sub*
   A favorite sub that can be reached by calling pando
 TODO add variables
 ------------------------------------------------------------------------------
 FUNCTIONS 						*pandoc-wiki-functions*
 
 							*pandoc#wiki#BuildMyDiary()*
-BuildMyDiary()
+*BuildMyDiary()*
     Builds the diary file index
 
-pandoc#wiki#OpenIndex
+*pandoc#wiki#OpenIndex*
   open the index file in your first wiki
 
-pandoc#wiki#OpenFavoriteSub
+*pandoc#wiki#OpenFavoriteSub*
   open the subdirectory defined by g:pandoc#wiki#favorite_sub in your first
   wiki
 
-pandoc#wiki#OpenToday
+*pandoc#wiki#OpenToday*
   open a diary file in the diary/ folder of your first wiki
 
 ------------------------------------------------------------------------------
@@ -77,13 +77,13 @@ KEY MAPPINGS 					*pandoc-wiki-key-mappings*
 gm (g mark)
   Make current paragraph a block quote
 
-<leader>ww
+*<leader>ww*
   call pandoc#wiki#OpenIndex()
 
-<leader>ws
+*<leader>ws*
   call pandoc#wiki#OpenFavoriteSub()
 
-<leader>wt
+*<leader>wt*
   call pandoc#wiki#OpenToday()
 
 ==============================================================================

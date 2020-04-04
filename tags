@@ -4,25 +4,25 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-<Leader>ws	c:\Users\jacob\repos\vim-pandoc-wiki\plugin\pandoc.vim	/^nnoremap <silent> <Leader>ws$/;"	m
-<Leader>wt	c:\Users\jacob\repos\vim-pandoc-wiki\plugin\pandoc.vim	/^nnoremap <silent> <Leader>wt$/;"	m
-<Leader>ww	c:\Users\jacob\repos\vim-pandoc-wiki\plugin\pandoc.vim	/^nnoremap <silent> <Leader>ww$/;"	m
-BuildDiary	c:\Users\jacob\repos\vim-pandoc-wiki\plugin\pandoc.vim	/^command! BuildDiary$/;"	c
-OpenIndex	c:\Users\jacob\repos\vim-pandoc-wiki\plugin\pandoc.vim	/^command! OpenIndex$/;"	c
-OpenStep	c:\Users\jacob\repos\vim-pandoc-wiki\plugin\pandoc.vim	/^command! OpenStep$/;"	c
-OpenToday	c:\Users\jacob\repos\vim-pandoc-wiki\plugin\pandoc.vim	/^command! OpenToday$/;"	c
-Path	c:\Users\jacob\repos\vim-pandoc-wiki\python3\vim_pandoc_wiki\diary.py	/^from pathlib import Path$/;"	i
-build_index	c:\Users\jacob\repos\vim-pandoc-wiki\python3\vim_pandoc_wiki\diary.py	/^def build_index():$/;"	f
-diary_dir	c:\Users\jacob\repos\vim-pandoc-wiki\python3\vim_pandoc_wiki\diary.py	/^diary_dir = notes_dir \/ 'diary'$/;"	v
-g:pandoc#wiki#dirs	c:\Users\jacob\repos\vim-pandoc-wiki\autoload\pandoc\wiki.vim	/^    let g:pandoc#wiki#dirs = ['~\/pandoc-wiki']$/;"	v
-gm	c:\Users\jacob\repos\vim-pandoc-wiki\ftplugin\pandoc.vim	/^nnoremap <buffer><silent> gm$/;"	m
-is_entry	c:\Users\jacob\repos\vim-pandoc-wiki\python3\vim_pandoc_wiki\diary.py	/^def is_entry(entry: str):$/;"	f
-months	c:\Users\jacob\repos\vim-pandoc-wiki\python3\vim_pandoc_wiki\diary.py	/^months = {$/;"	v
-notes_dir	c:\Users\jacob\repos\vim-pandoc-wiki\python3\vim_pandoc_wiki\diary.py	/^notes_dir = Path('C:\/Users\/jacob\/repos\/notes\/')$/;"	v
-pandoc#wiki#BuildMyDiary	c:\Users\jacob\repos\vim-pandoc-wiki\autoload\pandoc\wiki.vim	/^function! pandoc#wiki#BuildMyDiary() abort$/;"	f
-pandoc#wiki#MarkText	c:\Users\jacob\repos\vim-pandoc-wiki\autoload\pandoc\wiki.vim	/^function! pandoc#wiki#MarkText() abort$/;"	f
-pandoc#wiki#OpenFavoriteSub	c:\Users\jacob\repos\vim-pandoc-wiki\autoload\pandoc\wiki.vim	/^function! pandoc#wiki#OpenFavoriteSub() abort$/;"	f
-pandoc#wiki#OpenIndex	c:\Users\jacob\repos\vim-pandoc-wiki\autoload\pandoc\wiki.vim	/^function! pandoc#wiki#OpenIndex() abort$/;"	f
-pandoc#wiki#OpenToday	c:\Users\jacob\repos\vim-pandoc-wiki\autoload\pandoc\wiki.vim	/^function! pandoc#wiki#OpenToday() abort$/;"	f
-pandoc#wiki#OpenWikiFile	c:\Users\jacob\repos\vim-pandoc-wiki\autoload\pandoc\wiki.vim	/^function! pandoc#wiki#OpenWikiFile(wiki_file, ...) abort$/;"	f
-re	c:\Users\jacob\repos\vim-pandoc-wiki\python3\vim_pandoc_wiki\diary.py	/^import re$/;"	i
+<Leader>ws	.\plugin\pandoc.vim	/^nnoremap <silent> <Leader>ws$/;"	m
+<Leader>wt	.\plugin\pandoc.vim	/^nnoremap <silent> <Leader>wt$/;"	m
+<Leader>ww	.\plugin\pandoc.vim	/^nnoremap <silent> <Leader>ww$/;"	m
+BuildDiary	.\plugin\pandoc.vim	/^command! BuildDiary$/;"	c
+OpenIndex	.\plugin\pandoc.vim	/^command! OpenIndex$/;"	c
+OpenStep	.\plugin\pandoc.vim	/^command! OpenStep$/;"	c
+OpenToday	.\plugin\pandoc.vim	/^command! OpenToday$/;"	c
+Path	.\python3\vim_pandoc_wiki\diary.py	/^from pathlib import Path$/;"	i
+build_index	.\python3\vim_pandoc_wiki\diary.py	/^def build_index():$/;"	f
+diary_dir	.\python3\vim_pandoc_wiki\diary.py	/^diary_dir = notes_dir \/ 'diary'$/;"	v
+g:pandoc#wiki#dirs	.\autoload\pandoc\wiki.vim	/^    let g:pandoc#wiki#dirs = ['~\/pandoc-wiki']$/;"	v
+gm	.\ftplugin\pandoc.vim	/^nnoremap <buffer><silent> gm$/;"	m
+is_entry	.\python3\vim_pandoc_wiki\diary.py	/^def is_entry(entry: str):$/;"	f
+months	.\python3\vim_pandoc_wiki\diary.py	/^months = {$/;"	v
+notes_dir	.\python3\vim_pandoc_wiki\diary.py	/^notes_dir = Path('C:\/Users\/jacob\/repos\/notes\/')$/;"	v
+pandoc#wiki#BuildMyDiary	.\autoload\pandoc\wiki.vim	/^function! pandoc#wiki#BuildMyDiary() abort$/;"	f
+pandoc#wiki#MarkText	.\autoload\pandoc\wiki.vim	/^function! pandoc#wiki#MarkText() abort$/;"	f
+pandoc#wiki#OpenFavoriteSub	.\autoload\pandoc\wiki.vim	/^function! pandoc#wiki#OpenFavoriteSub() abort$/;"	f
+pandoc#wiki#OpenIndex	.\autoload\pandoc\wiki.vim	/^function! pandoc#wiki#OpenIndex() abort$/;"	f
+pandoc#wiki#OpenToday	.\autoload\pandoc\wiki.vim	/^function! pandoc#wiki#OpenToday() abort$/;"	f
+pandoc#wiki#OpenWikiFile	.\autoload\pandoc\wiki.vim	/^function! pandoc#wiki#OpenWikiFile(wiki_file, ...) abort$/;"	f
+re	.\python3\vim_pandoc_wiki\diary.py	/^import re$/;"	i

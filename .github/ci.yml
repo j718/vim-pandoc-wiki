@@ -1,0 +1,21 @@
+name: Run Vader Tests
+
+on:
+  push:
+
+jobs:
+  run-tests:
+    name: Tests on ubuntu-latest
+    runs-on: ubuntu-latest
+  - name: Install Vader
+    run: |
+      git clone https://github.com/junegunn/vader.vim.git
+  - name: Run Tests
+      vim -Nu <(cat << VIMRC
+      filetype off
+      set rtp+=vader.vim
+      set rtp+=.
+      set rtp+=after
+      filetype plugin indent on
+      syntax enable
+      VIMRC) -c 'Vader! test/*' > /dev/null

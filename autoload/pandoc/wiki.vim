@@ -41,7 +41,10 @@ endfunction
 "{ Other
 "{{ Mark Text
 function! pandoc#wiki#MarkText() abort
-let start = line("'{") + 1
+let start = line("'{")
+if getline(start) == ''
+  let start+=1
+endif
 call setline(start, '> ' . getline(start))
 endfunction
 
@@ -53,4 +56,3 @@ function! pandoc#wiki#OpenFavoriteSub() abort
     call pandoc#wiki#OpenWikiFile(g:pandoc#wiki#favorite_sub)
   endif
 endfunction
-

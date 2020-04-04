@@ -1,1 +1,2 @@
-nnoremap <buffer><silent> gm :call MarkText()<CR>
+nnoremap <buffer><silent> gm
+      \ :call pandoc#wiki#MarkText()<CR>

@@ -28,17 +28,17 @@ Execute (Test Open Today):
   AssertEqual today, expand('%:t')
   AssertEqual expand(g:pandoc#wiki#dirs[0]), getcwd()
 
-Do (Write a row then block quote it):
-  :set filetype=pandoc\<cr>
-  iThis\<esc>gm
+" Do (Write a row then block quote it):
+"   :set filetype=pandoc\<cr>
+"   iThis\<esc>gm
 
-Expect (Block quoted section):
-  > This
+" Expect (Block quoted section):
+"   > This
 
-Do (Write a row then block quote it with blankspace):
-  :set filetype=pandoc\<cr>
-  i\<cr>This\<esc>gm
+" Do (Write a row then block quote it with blankspace):
+"   :set filetype=pandoc\<cr>
+"   i\<cr>This\<esc>gm
 
-Expect (Block quoted section):
+" Expect (Block quoted section):
 
-  > This
+"   > This

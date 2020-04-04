@@ -5,7 +5,7 @@ on:
 
 jobs:
   run-tests:
-    name: Tests on ubuntu-latest
+    name: Tests on Ubuntu with Vader
     runs-on: ubuntu-latest
   - name: Install Vader
     run: |

@@ -59,6 +59,17 @@ BuildMyDiary()
 ------------------------------------------------------------------------------
 KEY MAPPINGS 					*pandoc-wiki-key-mappings*
 
+gm (g mark)
+  Make current paragraph a block quote
+
+<leader>ww
+  Open index file
+
+<leader>ws
+  Open Step File
+
+<leader>wt
+  Open Diary Entry for Today
 
 ==============================================================================
 FREQUENTLY ASKED QUESTIONS (FAQ)			*pandoc-wiki-faq*

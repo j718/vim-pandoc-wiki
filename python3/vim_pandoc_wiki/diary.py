@@ -22,12 +22,7 @@ def is_entry(entry: str):
 
 
 def build_index(path):
-    paths = path.split('~')
-    if len(paths) == 2:
-        wiki_dir = Path.home() / paths[1]
-    else:
-        wiki_dir = Path(path)
-    diary_dir = wiki_dir / 'diary'
+    diary_dir = Path(path).expanduser() / 'diary'
     output = [
         "# Diary\n",
             ]

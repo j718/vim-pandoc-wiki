@@ -1,8 +1,8 @@
-Before (Set wiki index):
-  Log getcwd()
-  execute 'cd' fnamemodify(g:vader_file, ':p:h')
-  Log getcwd()
-  let g:pandoc#wiki#dirs = [fnamemodify('data/wiki', ':p')]
+" Before (Set wiki index):
+"   Log getcwd()
+"   execute 'cd' fnamemodify(g:vader_file, ':p:h')
+"   Log getcwd()
+"   let g:pandoc#wiki#dirs = [fnamemodify('data/wiki', ':p')]
 
 Execute (Test Open wiki file):
   call pandoc#wiki#OpenWikiFile('index.md')
@@ -62,6 +62,12 @@ Do (Write a quoted row unquote it):
   :set filetype=pandoc\<cr>
   i> This\<esc>
   :call pandoc#wiki#MarkText()\<cr>
+
+Expect (Block quoted section):
+  This
+
+Do (Write a quoted row unquote it):
+  iThis\<esc>
 
 Expect (Block quoted section):
   This

@@ -8,10 +8,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1  
+    - run: |
+        apt-get update
+        apt-get install git vim -y
     - name: Install Vader
       run: |
-        rm -rf vader.vim vim-pandoc
-        git clone https://github.com/junegunn/vader.vim.git
+        rm -rf vader.vim 
+        git clone https://github.com/junegunn/vader.vim.git vader.vim
+    - name: List 
+      run: |
+        pwd
+        cd test
+        ls *
     - name: Run Tests
       run: |
         vim -Nu <(cat << VIMRC
@@ -21,4 +29,5 @@ jobs:
         set rtp+=after
         filetype plugin indent on
         syntax enable
-        VIMRC) -c 'Vader! "test/tests.vader"' > /dev/null
+        let g:pandoc#wiki#dirs = ['test/data/wiki']
+        VIMRC) -c 'Vader! test/tests.vader' > /dev/null

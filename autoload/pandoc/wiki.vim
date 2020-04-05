@@ -1,6 +1,6 @@
 "{ Init
 if has('python3')
-  py3 import importlib
+  py3 from importlib import reload
   py3 from vim_pandoc_wiki import diary
   py3 reload(diary)
 endif

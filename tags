@@ -12,99 +12,17 @@ OpenIndex	c:\Users\jacob\repos\vim-pandoc-wiki\plugin\pandoc.vim	/^command! Open
 OpenStep	c:\Users\jacob\repos\vim-pandoc-wiki\plugin\pandoc.vim	/^command! OpenStep$/;"	c
 OpenToday	c:\Users\jacob\repos\vim-pandoc-wiki\plugin\pandoc.vim	/^command! OpenToday$/;"	c
 Path	c:\Users\jacob\repos\vim-pandoc-wiki\python3\vim_pandoc_wiki\diary.py	/^from pathlib import Path$/;"	i
-Vader	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\plugin\vader.vim	/^command! -bang -nargs=* -range -complete=file Vader <line1>,<line2>call s:vader(<bang>0, <f-args>)$/;"	c
-[[	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\ftplugin\vader.vim	/^nnoremap <buffer><silent> [[ :call search(b:vader_label, 'bW')<CR>$/;"	m
-[[	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\ftplugin\vader.vim	/^vnoremap <buffer><silent> [[ <ESC>:execute "normal! gv"<BAR>call search(b:vader_label, 'bW')<CR>$/;"	m
-[]	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\ftplugin\vader.vim	/^nnoremap <buffer><silent> [] :call search(b:vader_eos, 'bW')<CR>$/;"	m
-[]	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\ftplugin\vader.vim	/^vnoremap <buffer><silent> [] <ESC>:execute "normal! gv"<BAR>call search(b:vader_eos, 'bW')<CR>$/;"	m
-][	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\ftplugin\vader.vim	/^nnoremap <buffer><silent> ][ :call search(b:vader_eos, 'W')<CR>$/;"	m
-][	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\ftplugin\vader.vim	/^vnoremap <buffer><silent> ][ <ESC>:execute "normal! gv"<BAR>call search(b:vader_eos, 'W')<CR>$/;"	m
-]]	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\ftplugin\vader.vim	/^nnoremap <buffer><silent> ]] :call search(b:vader_label, 'W')<CR>$/;"	m
-]]	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\ftplugin\vader.vim	/^vnoremap <buffer><silent> ]] <ESC>:execute "normal! gv"<BAR>call search(b:vader_label, 'W')<CR>$/;"	m
-action	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\window.vim	/^function! s:action(line)$/;"	f
-append	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader.vim	/^function! s:append(prefix, type, message, ...)$/;"	f
-b:current_syntax	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\syntax\vader.vim	/^let b:current_syntax = 'vader'$/;"	v
-b:undo_ftplugin	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\ftplugin\vader.vim	/^let b:undo_ftplugin = 'setl sw< ts< sts< et< cms< isk<'$/;"	v
-b:vader_eos	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\ftplugin\vader.vim	/^let b:vader_eos = '\\(.*\\n'.vader#syntax#_head().'\\)\\|\\%$'$/;"	v
-b:vader_label	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\ftplugin\vader.vim	/^let b:vader_label = vader#syntax#_head()$/;"	v
 build_index	c:\Users\jacob\repos\vim-pandoc-wiki\python3\vim_pandoc_wiki\diary.py	/^def build_index():$/;"	f
-check_types	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\assert.vim	/^function! s:check_types(...)$/;"	f
-cleanup	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader.vim	/^function! s:cleanup()$/;"	f
-comment	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader.vim	/^function! s:comment(case, label)$/;"	f
-define_syntax_region	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\syntax.vim	/^function! s:define_syntax_region(block, lang)$/;"	f
 diary_dir	c:\Users\jacob\repos\vim-pandoc-wiki\python3\vim_pandoc_wiki\diary.py	/^diary_dir = notes_dir \/ 'diary'$/;"	v
-execute	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader.vim	/^function! s:execute(prefix, type, block, lang_if)$/;"	f
-flush_buffer	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\parser.vim	/^function! s:flush_buffer(cases, case, fn, lnum, raw, label, newlabel, buffer, final)$/;"	f
-g:loaded_vader	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\plugin\vader.vim	/^  let g:loaded_vader = 1$/;"	v
 g:pandoc#wiki#dirs	c:\Users\jacob\repos\vim-pandoc-wiki\autoload\pandoc\wiki.vim	/^    let g:pandoc#wiki#dirs = ['~\/pandoc-wiki']$/;"	v
 gm	c:\Users\jacob\repos\vim-pandoc-wiki\ftplugin\pandoc.vim	/^nnoremap <buffer><silent> gm$/;"	m
 is_entry	c:\Users\jacob\repos\vim-pandoc-wiki\python3\vim_pandoc_wiki\diary.py	/^def is_entry(entry: str):$/;"	f
-load	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\syntax.vim	/^function! s:load(type)$/;"	f
-mode	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader.vim	/^    let mode = ''$/;"	v
-mode	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader.vim	/^    let mode = mode(1)$/;"	v
 months	c:\Users\jacob\repos\vim-pandoc-wiki\python3\vim_pandoc_wiki\diary.py	/^months = {$/;"	v
-move	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\window.vim	/^function! s:move()$/;"	f
 notes_dir	c:\Users\jacob\repos\vim-pandoc-wiki\python3\vim_pandoc_wiki\diary.py	/^notes_dir = Path('C:\/Users\/jacob\/repos\/notes\/')$/;"	v
-output_stderr_buffer	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader.vim	/^    function! s:output_stderr_buffer() abort$/;"	f
 pandoc#wiki#BuildMyDiary	c:\Users\jacob\repos\vim-pandoc-wiki\autoload\pandoc\wiki.vim	/^function! pandoc#wiki#BuildMyDiary() abort$/;"	f
 pandoc#wiki#MarkText	c:\Users\jacob\repos\vim-pandoc-wiki\autoload\pandoc\wiki.vim	/^function! pandoc#wiki#MarkText() abort$/;"	f
 pandoc#wiki#OpenFavoriteSub	c:\Users\jacob\repos\vim-pandoc-wiki\autoload\pandoc\wiki.vim	/^function! pandoc#wiki#OpenFavoriteSub() abort$/;"	f
 pandoc#wiki#OpenIndex	c:\Users\jacob\repos\vim-pandoc-wiki\autoload\pandoc\wiki.vim	/^function! pandoc#wiki#OpenIndex() abort$/;"	f
 pandoc#wiki#OpenToday	c:\Users\jacob\repos\vim-pandoc-wiki\autoload\pandoc\wiki.vim	/^function! pandoc#wiki#OpenToday() abort$/;"	f
 pandoc#wiki#OpenWikiFile	c:\Users\jacob\repos\vim-pandoc-wiki\autoload\pandoc\wiki.vim	/^function! pandoc#wiki#OpenWikiFile(wiki_file, ...) abort$/;"	f
-parse_vader	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\parser.vim	/^function! s:parse_vader(lines, line1)$/;"	f
-prepare	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader.vim	/^function! s:prepare()$/;"	f
-print_throwpoint	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader.vim	/^function! s:print_throwpoint()$/;"	f
-quit	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\window.vim	/^function! s:quit()$/;"	f
 re	c:\Users\jacob\repos\vim-pandoc-wiki\python3\vim_pandoc_wiki\diary.py	/^import re$/;"	i
-read_vader	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\parser.vim	/^function! s:read_vader(fn, line1, line2)$/;"	f
-run	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader.vim	/^function! s:run(filename, cases, options)$/;"	f
-s:assertions	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\assert.vim	/^let s:assertions = [0, 0]$/;"	v
-s:cat	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader.vim	/^let s:cat = executable('cat') ? 'cat' : 'type'$/;"	v
-s:console_bfr	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\window.vim	/^let s:console_bfr   = 0$/;"	v
-s:console_tab	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\window.vim	/^let s:console_tab   = 0$/;"	v
-s:ifs	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\syntax.vim	/^let s:ifs = ['lua', 'perl', 'ruby', 'python']$/;"	v
-s:indent	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader.vim	/^let s:indent = 2$/;"	v
-s:oisk	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\syntax\vader.vim	/^let s:oisk = &isk$/;"	v
-s:quickfix_bfr	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\window.vim	/^let s:quickfix_bfr  = 0$/;"	v
-s:register	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader.vim	/^let s:register = {}$/;"	v
-s:register_undefined	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader.vim	/^let s:register_undefined = []$/;"	v
-s:save_cpo	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\ftplugin\vader.vim	/^let s:save_cpo = &cpo$/;"	v
-s:stderr_buffer	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader.vim	/^    let s:stderr_buffer = []$/;"	v
-s:type_names	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\assert.vim	/^let s:type_names = {$/;"	v
-s:workbench_bfr	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\window.vim	/^let s:workbench_bfr = 0$/;"	v
-s:workbench_tab	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\window.vim	/^let s:workbench_tab = 0$/;"	v
-scratch	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\window.vim	/^function! s:scratch(type, data, title)$/;"	f
-split_args	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader.vim	/^function! s:split_args(arg)$/;"	f
-switch_to_console	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\window.vim	/^function! s:switch_to_console()$/;"	f
-switch_to_workbench	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\window.vim	/^function! s:switch_to_workbench()$/;"	f
-vader	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\plugin\vader.vim	/^  function! s:vader(...) range$/;"	f
-vader#assert#equal	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\assert.vim	/^function! vader#assert#equal(...)$/;"	f
-vader#assert#not_equal	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\assert.vim	/^function! vader#assert#not_equal(...)$/;"	f
-vader#assert#reset	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\assert.vim	/^function! vader#assert#reset()$/;"	f
-vader#assert#stat	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\assert.vim	/^function! vader#assert#stat()$/;"	f
-vader#assert#throws	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\assert.vim	/^function! vader#assert#throws(exp)$/;"	f
-vader#assert#true	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\assert.vim	/^function! vader#assert#true(...)$/;"	f
-vader#helper#syntax_at	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\helper.vim	/^function! vader#helper#syntax_at(...)$/;"	f
-vader#helper#syntax_of	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\helper.vim	/^function! vader#helper#syntax_of(pattern, ...)$/;"	f
-vader#log	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader.vim	/^function! vader#log(msg)$/;"	f
-vader#parser#parse	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\parser.vim	/^function! vader#parser#parse(fn, line1, line2)$/;"	f
-vader#print_stderr	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader.vim	/^    function! vader#print_stderr(output) abort$/;"	f
-vader#print_stderr	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader.vim	/^  function! vader#print_stderr(output) abort$/;"	f
-vader#restore	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader.vim	/^function! vader#restore(args)$/;"	f
-vader#run	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader.vim	/^function! vader#run(bang, ...) range$/;"	f
-vader#save	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader.vim	/^function! vader#save(args)$/;"	f
-vader#syntax#_head	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\syntax.vim	/^function! vader#syntax#_head()$/;"	f
-vader#syntax#include	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\syntax.vim	/^function! vader#syntax#include(l1, l2)$/;"	f
-vader#syntax#reset	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\syntax.vim	/^function! vader#syntax#reset()$/;"	f
-vader#window#append	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\window.vim	/^function! vader#window#append(message, indent, ...)$/;"	f
-vader#window#cleanup	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\window.vim	/^function! vader#window#cleanup()$/;"	f
-vader#window#copen	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\window.vim	/^function! vader#window#copen()$/;"	f
-vader#window#execute	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\window.vim	/^function! vader#window#execute(lines, lang_if)$/;"	f
-vader#window#open	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\window.vim	/^function! vader#window#open()$/;"	f
-vader#window#prepare	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\window.vim	/^function! vader#window#prepare(lines, type)$/;"	f
-vader#window#replay	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\window.vim	/^function! vader#window#replay(lines)$/;"	f
-vader#window#result	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\window.vim	/^function! vader#window#result()$/;"	f
-vader#window#set_data	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader\window.vim	/^function! vader#window#set_data(l1, l2, data)$/;"	f
-vader_exit	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\autoload\vader.vim	/^    augroup vader_exit$/;"	a
-vader_syntax	c:\Users\jacob\repos\vim-pandoc-wiki\vader.vim\ftplugin\vader.vim	/^augroup vader_syntax$/;"	a

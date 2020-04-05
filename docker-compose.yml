@@ -1,0 +1,13 @@
+version: '3.0'
+services:
+  vader:
+    build: .
+    container_name: vader
+    volumes:
+      - .:/vim-pandoc-wiki
+    command:
+      - /bin/bash
+      - -c
+      - | 
+        vim -Nu /vim-pandoc-wiki/test/.vimrc -c 'Vader! vim-pandoc-wiki/test/tests.vader' > /dev/null
+

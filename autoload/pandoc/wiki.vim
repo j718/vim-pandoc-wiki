@@ -45,7 +45,12 @@ let start = line("'{")
 if getline(start) == ''
   let start+=1
 endif
-call setline(start, '> ' . getline(start))
+let start_line = getline(start)
+if start_line[0:1] == '> '
+  call setline(start, start_line[2:])
+else
+  call setline(start, '> ' . start_line)
+endif
 endfunction
 
 "{{ Open Favorite Sub

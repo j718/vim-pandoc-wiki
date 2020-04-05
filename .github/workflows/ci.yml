@@ -8,6 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1  
+    - name: CWD
+      run: |
+        cd ~
+        pwd
     - name: Install Vader
       run: |
         rm -rf vader.vim 

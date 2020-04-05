@@ -10,16 +10,15 @@ jobs:
     - uses: actions/checkout@v1  
     - name: Install Vader
       run: |
+        rm -rf vader.vim vim-pandoc
         git clone https://github.com/junegunn/vader.vim.git
-        git clone https://github.com/vim-pandoc/vim-pandoc.git
     - name: Run Tests
       run: |
         vim -Nu <(cat << VIMRC
         filetype off
         set rtp+=vader.vim
-        set rtp+=vim-pandoc
         set rtp+=.
         set rtp+=after
         filetype plugin indent on
         syntax enable
-        VIMRC) -c 'Vader! test/*' > /dev/null
+        VIMRC) -c 'Vader! "test/tests.vader"' > /dev/null

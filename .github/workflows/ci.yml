@@ -23,5 +23,5 @@ jobs:
         set rtp+=after
         filetype plugin indent on
         syntax enable
-        let g:pandoc#wiki#dirs = ['~/test/data/wiki']
+        let g:pandoc#wiki#dirs = ['~/work/vim-pandoc-wiki/vim-pandoc-wiki/test/data/wiki']
         VIMRC) -c 'Vader! test/tests.vader' > /dev/null

@@ -30,14 +30,16 @@ Execute (Test Open Today):
 
 Do (Write a row then block quote it):
   :set filetype=pandoc\<cr>
-  iThis\<esc>gm
+  iThis\<esc>
+  :call pandoc#wiki#MarkText()\<cr>
 
 Expect (Block quoted section):
   > This
 
 Do (Write a row then block quote it with blankspace):
   :set filetype=pandoc\<cr>
-  i\<cr>This\<esc>gm
+  i\<cr>This\<esc>
+  :call pandoc#wiki#MarkText()\<cr>
 
 Expect (Block quoted section):
 
@@ -45,7 +47,8 @@ Expect (Block quoted section):
 
 Do (Write a quoted row unquote it with blankspace):
   :set filetype=pandoc\<cr>
-  i\<cr>> This\<esc>gm
+  i\<cr>> This\<esc>
+  :call pandoc#wiki#MarkText()\<cr>
 
 Expect (Block quoted section):
 
@@ -53,7 +56,8 @@ Expect (Block quoted section):
 
 Do (Write a quoted row unquote it):
   :set filetype=pandoc\<cr>
-  i> This\<esc>gm
+  i> This\<esc>
+  :call pandoc#wiki#MarkText()\<cr>
 
 Expect (Block quoted section):
   This

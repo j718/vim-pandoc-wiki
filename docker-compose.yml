@@ -1,7 +1,6 @@
 version: '3.0'
 services:
   vader:
-    build: .
     image: docker.pkg.github.com/j718/vim-pandoc-wiki/vader:latest
     container_name: vader
     volumes:

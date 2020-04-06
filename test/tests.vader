@@ -71,6 +71,3 @@ Do (Write a quoted row unquote it):
 
 Expect (Block quoted section):
   This
-
-Execute (Error):
-  AssertEqual 10, 20

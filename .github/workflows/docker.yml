@@ -2,12 +2,10 @@ name: Docker
 
 on:
   push:
-    branches:
-      - master
+#    branches:
+ #     - master
 
-  env:
-    # TODO: Change variable to your image's name.
-    IMAGE_NAME: image
+
 
 jobs:
   push:
@@ -23,7 +21,10 @@ jobs:
         run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login ${{ secrets.DOCKER_REGISTRY_URL }} -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
 
       - name: Push image
+        env:
+          IMAGE_NAME: vader
         run: |
+
           IMAGE_ID=${{ secrets.DOCKER_REGISTRY_URL }}/${{ secrets.DOCKER_REPOSITORY_NAME }}/$IMAGE_NAME
           # Strip git ref prefix from version
           VERSION=$(echo "${{ github.ref }}" | sed -e 's,.*/\(.*\),\1,')

@@ -8,20 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1  
-    - name: CWD
-      run: |
-    - name: Install Vader
-      run: |
-        rm -rf vader.vim 
-        git clone https://github.com/junegunn/vader.vim.git vader.vim
     - name: Run Tests
       run: |
-        vim -Nu <(cat << VIMRC
-        filetype off
-        set rtp+=vader.vim
-        set rtp+=.
-        set rtp+=after
-        filetype plugin indent on
-        syntax enable
-        let g:pandoc#wiki#dirs = ['~/work/vim-pandoc-wiki/vim-pandoc-wiki/test/data/wiki']
-        VIMRC) -c 'Vader! test/tests.vader' > /dev/null
+        docker-compose up

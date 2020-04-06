@@ -8,6 +8,5 @@ services:
     command:
       - /bin/bash
       - -c
-      - | 
-        vim -Nu /vim-pandoc-wiki/test/.vimrc -c 'Vader! vim-pandoc-wiki/test/tests.vader' > /dev/null
+      - nvim -Nu /vim-pandoc-wiki/test/.vimrc -c 'Vader! vim-pandoc-wiki/test/main.vader' > /dev/null
 

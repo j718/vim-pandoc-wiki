@@ -1,8 +1,4 @@
-" Before (Set wiki index):
-"   Log getcwd()
-"   execute 'cd' fnamemodify(g:vader_file, ':p:h')
-"   Log getcwd()
-"   let g:pandoc#wiki#dirs = [fnamemodify('data/wiki', ':p')]
+Include: setup.vader
 
 Execute (Test Open wiki file):
   call pandoc#wiki#OpenWikiFile('index.md')

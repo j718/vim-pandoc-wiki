@@ -9,5 +9,4 @@ jobs:
     steps:
     - uses: actions/checkout@v1  
     - name: Run Tests
-      run: |
-        docker-compose up
+      run: docker-compose up -d

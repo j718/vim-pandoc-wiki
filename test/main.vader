@@ -3,30 +3,21 @@ Include: setup.vader
 Execute (Test Open wiki file):
   call pandoc#wiki#OpenWikiFile('index.md')
   AssertEqual 'index.md', expand('%:t')
-  AssertEqual expand(g:pandoc#wiki#dirs[0]), getcwd()
+  AssertEqual expand(g:pandoc#wiki#dirs[0]), expand('%:p:h')
 
 Execute (Test Open Index):
   call pandoc#wiki#OpenIndex()
   AssertEqual 'index.md', expand('%:t')
-  AssertEqual expand(g:pandoc#wiki#dirs[0]), getcwd()
 
 Execute (Test Open Favorite Sub):
   let g:pandoc#wiki#favorite_sub = 'myfav.md'
   call pandoc#wiki#OpenFavoriteSub()
   AssertEqual 'myfav.md', expand('%:t')
-  AssertEqual expand(g:pandoc#wiki#dirs[0]), getcwd()
-
-Execute (Test Open Favorite Sub):
-  let g:pandoc#wiki#favorite_sub = 'myfav.md'
-  call pandoc#wiki#OpenFavoriteSub()
-  AssertEqual 'myfav.md', expand('%:t')
-  AssertEqual expand(g:pandoc#wiki#dirs[0]), getcwd()
 
 Execute (Test Open Today):
   let today =  strftime("%Y-%m-%d") . ".md"
   call pandoc#wiki#OpenToday()
   AssertEqual today, expand('%:t')
-  AssertEqual expand(g:pandoc#wiki#dirs[0]), getcwd()
 
 Do (Write a row then block quote it):
   :set filetype=pandoc\<cr>
@@ -58,12 +49,6 @@ Do (Write a quoted row unquote it):
   :set filetype=pandoc\<cr>
   i> This\<esc>
   :call pandoc#wiki#MarkText()\<cr>
-
-Expect (Block quoted section):
-  This
-
-Do (Write a quoted row unquote it):
-  iThis\<esc>
 
 Expect (Block quoted section):
   This

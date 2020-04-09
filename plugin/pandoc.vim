@@ -13,4 +13,4 @@ nnoremap <silent> <Leader>ww
 nnoremap <silent> <Leader>ws
       \ :call pandoc#wiki#OpenFavoriteSub()<CR>
 nnoremap <silent> <Leader>wt
-      \ :call pandoc#wiki#OpenToday<CR>
+      \ :call pandoc#wiki#OpenToday()<CR>

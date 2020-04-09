@@ -1,6 +1,8 @@
 "{ Init
 if has('python3')
+  py3 from importlib import reload
   py3 from vim_pandoc_wiki import diary
+  py3 reload(diary)
 endif
 
 "{ Helper Function
@@ -15,8 +17,7 @@ function! pandoc#wiki#OpenWikiFile(wiki_file, ...) abort
     let wiki_dir = g:pandoc#wiki#dirs[0]
   endif
 
-  exec 'cd ' . wiki_dir
-  exec 'e ' . a:wiki_file
+  exec 'e ' wiki_dir . '/' . a:wiki_file
 endfunction
 
 

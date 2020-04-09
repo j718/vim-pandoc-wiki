@@ -3,24 +3,22 @@
 !_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
-!_TAG_PROGRAM_VERSION	5.8	//
-<Leader>ws	.\plugin\pandoc.vim	/^nnoremap <silent> <Leader>ws$/;"	m
-<Leader>wt	.\plugin\pandoc.vim	/^nnoremap <silent> <Leader>wt$/;"	m
-<Leader>ww	.\plugin\pandoc.vim	/^nnoremap <silent> <Leader>ww$/;"	m
-BuildDiary	.\plugin\pandoc.vim	/^command! BuildDiary$/;"	c
-OpenIndex	.\plugin\pandoc.vim	/^command! OpenIndex$/;"	c
-OpenStep	.\plugin\pandoc.vim	/^command! OpenStep$/;"	c
-OpenToday	.\plugin\pandoc.vim	/^command! OpenToday$/;"	c
-Path	.\python3\vim_pandoc_wiki\diary.py	/^from pathlib import Path$/;"	i
-build_index	.\python3\vim_pandoc_wiki\diary.py	/^def build_index(path):$/;"	f
-g:pandoc#wiki#dirs	.\autoload\pandoc\wiki.vim	/^    let g:pandoc#wiki#dirs = ['~\/pandoc-wiki']$/;"	v
-gm	.\ftplugin\pandoc.vim	/^nnoremap <buffer><silent> gm$/;"	m
-is_entry	.\python3\vim_pandoc_wiki\diary.py	/^def is_entry(entry: str):$/;"	f
-months	.\python3\vim_pandoc_wiki\diary.py	/^months = {$/;"	v
-pandoc#wiki#BuildMyDiary	.\autoload\pandoc\wiki.vim	/^function! pandoc#wiki#BuildMyDiary() abort$/;"	f
-pandoc#wiki#MarkText	.\autoload\pandoc\wiki.vim	/^function! pandoc#wiki#MarkText() abort$/;"	f
-pandoc#wiki#OpenFavoriteSub	.\autoload\pandoc\wiki.vim	/^function! pandoc#wiki#OpenFavoriteSub() abort$/;"	f
-pandoc#wiki#OpenIndex	.\autoload\pandoc\wiki.vim	/^function! pandoc#wiki#OpenIndex() abort$/;"	f
-pandoc#wiki#OpenToday	.\autoload\pandoc\wiki.vim	/^function! pandoc#wiki#OpenToday() abort$/;"	f
-pandoc#wiki#OpenWikiFile	.\autoload\pandoc\wiki.vim	/^function! pandoc#wiki#OpenWikiFile(wiki_file, ...) abort$/;"	f
-re	.\python3\vim_pandoc_wiki\diary.py	/^import re$/;"	i
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+<Leader>ws	plugin/pandoc.vim	/^nnoremap <silent> <Leader>ws$/;"	m
+<Leader>wt	plugin/pandoc.vim	/^nnoremap <silent> <Leader>wt$/;"	m
+<Leader>ww	plugin/pandoc.vim	/^nnoremap <silent> <Leader>ww$/;"	m
+BuildDiary	plugin/pandoc.vim	/^command! BuildDiary$/;"	c
+OpenIndex	plugin/pandoc.vim	/^command! OpenIndex$/;"	c
+OpenStep	plugin/pandoc.vim	/^command! OpenStep$/;"	c
+OpenToday	plugin/pandoc.vim	/^command! OpenToday$/;"	c
+build_index	python3/vim_pandoc_wiki/diary.py	/^def build_index(path):$/;"	f
+g:pandoc#wiki#dirs	autoload/pandoc/wiki.vim	/^    let g:pandoc#wiki#dirs = ['~\/pandoc-wiki']$/;"	v
+gm	ftplugin/pandoc.vim	/^nnoremap <buffer><silent> gm$/;"	m
+is_entry	python3/vim_pandoc_wiki/diary.py	/^def is_entry(entry: str):$/;"	f
+months	python3/vim_pandoc_wiki/diary.py	/^months = {$/;"	v
+pandoc#wiki#BuildMyDiary	autoload/pandoc/wiki.vim	/^function! pandoc#wiki#BuildMyDiary() abort$/;"	f
+pandoc#wiki#MarkText	autoload/pandoc/wiki.vim	/^function! pandoc#wiki#MarkText() abort$/;"	f
+pandoc#wiki#OpenFavoriteSub	autoload/pandoc/wiki.vim	/^function! pandoc#wiki#OpenFavoriteSub() abort$/;"	f
+pandoc#wiki#OpenIndex	autoload/pandoc/wiki.vim	/^function! pandoc#wiki#OpenIndex() abort$/;"	f
+pandoc#wiki#OpenToday	autoload/pandoc/wiki.vim	/^function! pandoc#wiki#OpenToday() abort$/;"	f
+pandoc#wiki#OpenWikiFile	autoload/pandoc/wiki.vim	/^function! pandoc#wiki#OpenWikiFile(wiki_file, ...) abort$/;"	f

@@ -1,0 +1,5 @@
+Execute (Setup Test Data):
+  let g:pandoc#wiki#dirs = ['/data/wiki']
+  !mkdir -p /data/wiki/diary
+  !touch /data/wiki/diary/2019-03-03.md
+  !touch /data/wiki/diary/2019-04-04.md

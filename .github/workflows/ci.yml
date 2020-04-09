@@ -8,18 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1  
-    - name: Install Vader
-      run: |
-        git clone https://github.com/junegunn/vader.vim.git
-        git clone https://github.com/vim-pandoc/vim-pandoc.git
+    - name: Log into registry
+      run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login ${{ secrets.DOCKER_REGISTRY_URL }} -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
     - name: Run Tests
-      run: |
-        vim -Nu <(cat << VIMRC
-        filetype off
-        set rtp+=vader.vim
-        set rtp+=vim-pandoc
-        set rtp+=.
-        set rtp+=after
-        filetype plugin indent on
-        syntax enable
-        VIMRC) -c 'Vader! test/*' > /dev/null
+      run: make vader

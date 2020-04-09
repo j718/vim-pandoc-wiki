@@ -1,8 +1,6 @@
 from pathlib import Path
 import re
 
-notes_dir = Path('C:/Users/jacob/repos/notes/')
-diary_dir = notes_dir / 'diary'
 months = {
     "01": "January",
     "02": "February",
@@ -23,7 +21,8 @@ def is_entry(entry: str):
     return bool(re.match(r"\d\d\d\d-\d\d-\d\d\.md", entry))
 
 
-def build_index():
+def build_index(path):
+    diary_dir = Path(path).expanduser() / 'diary'
     output = [
         "# Diary\n",
             ]

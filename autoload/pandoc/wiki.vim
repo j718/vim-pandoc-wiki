@@ -30,7 +30,7 @@ endfunction
 "{ Diary
 "{{ BuildMyDiary
 function! pandoc#wiki#BuildMyDiary() abort
-  py3 diary.build_index()
+  exec "py3 diary.build_index('" . g:pandoc#wiki#dirs[0] . "')"
 endfunction
 
 "{{ Open Today
